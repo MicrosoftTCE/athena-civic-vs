@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>athena-civic</Name>
+    <RootNamespace>athena-civic</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2aa91e8b-9910-4f46-b229-294487c5566b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="public\javascripts\aight-master\aight.d3.js" />
+    <Compile Include="public\javascripts\aight-master\aight.d3.min.js" />
+    <Compile Include="public\javascripts\aight-master\aight.js" />
+    <Compile Include="public\javascripts\aight-master\aight.min.js" />
+    <Compile Include="public\javascripts\aight-master\js\aight.js" />
+    <Compile Include="public\javascripts\aight-master\js\computed-style.js" />
+    <Compile Include="public\javascripts\aight-master\js\css-properties.js" />
+    <Compile Include="public\javascripts\aight-master\js\element-createElementNS.js" />
+    <Compile Include="public\javascripts\aight-master\js\element-events.js" />
+    <Compile Include="public\javascripts\aight-master\js\element-properties.js" />
+    <Compile Include="public\javascripts\d3.v3.min.js" />
+    <Compile Include="public\javascripts\database.js" />
+    <Compile Include="public\javascripts\graph.js" />
+    <Compile Include="public\javascripts\graphmin.js" />
+    <Compile Include="public\javascripts\underscore-min.js" />
+    <Compile Include="public\javascripts\warmup.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\compress\compressor.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\docs.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\github.info.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\hitua.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\holder\holder.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\jquery.dataTables.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\jquery.easing.1.3.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\jquery.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\jquery.mousewheel.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\jquery.widget.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\load-metro.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-accordion.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-button-set.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-calendar.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-carousel.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-core.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-countdown.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-date-format.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-datepicker.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-dialog.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-drag-tile.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-dropdown.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-fluentmenu.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-global.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-hint.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-initiator.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-input-control.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-listview.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-live-tile.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-loader.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-locale.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-notify.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-panel.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-plugin-template.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-progressbar.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-pull.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-rating.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-scroll.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-slider.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-stepper.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-streamer.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-tab-control.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-table.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-tile-transform.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-times.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-touch-handler.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-treeview.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\metro-wizard.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-apollo.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-basic.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-clj.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-css.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-dart.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-erlang.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-go.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-hs.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-lisp.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-llvm.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-lua.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-matlab.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-ml.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-mumps.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-n.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-pascal.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-proto.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-r.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-rd.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-scala.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-sql.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-tcl.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-tex.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-vb.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-vhdl.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-wiki.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-xq.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\lang-yaml.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\prettify.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\run_prettify.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\docs\js\start-screen.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-accordion.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-button-set.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-calendar.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-carousel.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-core.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-countdown.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-date-format.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-datepicker.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-dialog.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-drag-tile.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-dropdown.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-fluentmenu.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-global.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-hint.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-initiator.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-input-control.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-listview.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-live-tile.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-loader.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-locale.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-notify.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-panel.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-plugin-template.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-progressbar.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-pull.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-rating.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-scroll.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-slider.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-stepper.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-streamer.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-tab-control.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-table.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-tile-transform.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-times.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-touch-handler.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-treeview.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\js\metro-wizard.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\min\jquery.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\min\jquery.widget.min.js" />
+    <Compile Include="public\stylesheets\Metro-UI-CSS-master\min\metro.min.js" />
+    <Compile Include="public\stylesheets\PIE-1.0.0\PIE.js" />
+    <Compile Include="public\stylesheets\PIE-1.0.0\PIE_uncompressed.js" />
+    <Compile Include="routes\api.js" />
+    <Compile Include="routes\dbactions.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\staticaction.js" />
+    <Compile Include="routes\users.js" />
+    <Compile Include="bin\www" />
+    <Content Include="package.json" />
+    <Content Include="public\data\final_data.json" />
+    <Content Include="public\images\microsoft.ico" />
+    <Content Include="public\images\ms_logo.png" />
+    <Content Include="public\javascripts\.DS_Store" />
+    <Content Include="public\javascripts\aight-master\.gitmodules" />
+    <Content Include="public\javascripts\aight-master\assets\aight.png" />
+    <Content Include="public\javascripts\aight-master\bower.json" />
+    <Content Include="public\javascripts\aight-master\LICENSE" />
+    <Content Include="public\javascripts\aight-master\Makefile" />
+    <Content Include="public\javascripts\aight-master\README.md" />
+    <Content Include="public\javascripts\aight-master\template.html" />
+    <Content Include="public\javascripts\underscore-min.map" />
+    <Content Include="public\javascripts\warmup.zip" />
+    <Content Include="public\stylesheets\checkboxes.css" />
+    <Content Include="public\stylesheets\font-awesome\css\font-awesome.css" />
+    <Content Include="public\stylesheets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="public\stylesheets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\stylesheets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\stylesheets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\stylesheets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\stylesheets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="public\stylesheets\font-awesome\less\bordered-pulled.less" />
+    <Content Include="public\stylesheets\font-awesome\less\core.less" />
+    <Content Include="public\stylesheets\font-awesome\less\fixed-width.less" />
+    <Content Include="public\stylesheets\font-awesome\less\font-awesome.less" />
+    <Content Include="public\stylesheets\font-awesome\less\icons.less" />
+    <Content Include="public\stylesheets\font-awesome\less\larger.less" />
+    <Content Include="public\stylesheets\font-awesome\less\list.less" />
+    <Content Include="public\stylesheets\font-awesome\less\mixins.less" />
+    <Content Include="public\stylesheets\font-awesome\less\path.less" />
+    <Content Include="public\stylesheets\font-awesome\less\rotated-flipped.less" />
+    <Content Include="public\stylesheets\font-awesome\less\spinning.less" />
+    <Content Include="public\stylesheets\font-awesome\less\stacked.less" />
+    <Content Include="public\stylesheets\font-awesome\less\variables.less" />
+    <Content Include="public\stylesheets\font-awesome\scss\font-awesome.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_core.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_icons.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_larger.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_list.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_mixins.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_path.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_spinning.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_stacked.scss" />
+    <Content Include="public\stylesheets\font-awesome\scss\_variables.scss" />
+    <Content Include="public\stylesheets\herograph.css" />
+    <Content Include="public\stylesheets\map.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\.gitignore" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\bower.json" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\branch.cmd" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\CHANGELOG.md" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\commit.cmd" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\compile.cmd" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\css\metro-bootstrap-responsive.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\css\metro-bootstrap.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\.htaccess" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\accordion.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\balloon.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\buttons.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\calendar.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\carousel.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\css\docs.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\css\iconFont.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\css\less\docs.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\css\metro-bootstrap-responsive.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\css\metro-bootstrap.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\dataTables.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\data\dataTables-objects.txt" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\datepicker.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\dialog.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\examples.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fluent-menu.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.dev.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.eot" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.json" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.ttf" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\iconFont.woff" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\metroSysIcons.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\metroSysIcons.ttf" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\metroSysIcons.woff" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\footer.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\forms.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\global.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\grid.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\header.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\hint.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\icons.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\1.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\2.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\3.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\4.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\5.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\access.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\author.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\b1.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Battlefield_4_Icon.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\beer.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\BizSparkTile.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\bizspark_b.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\bizspark_b_2.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Calendar-Next.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\clouds.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\clouds2.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Crysis-2-icon.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\css-logo.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\D3.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\download-32.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\excel.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\excel2013icon.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\fluent-menu.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Folder-Rename.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\fork-32.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\grid2.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\jeki_chan.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\jek_vorobey.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\jetbrains.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\jolie.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\live1.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\live2.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\me.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\meter-210.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Metro-UI-CSS.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\myface.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Notebook-Save.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\nuget-logo.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\obama.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Office365.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\onenote.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\onenote2013icon.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Open_Source_Iniative.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\org-01.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\outlook.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\phpstorm_7_eap.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\phpstorm_tn.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\phpstorm_tn_2.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\powerpoint.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Print-Quick.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\shvarcenegger.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\spface.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\tiles-bg-2.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\tiles-bg.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Window-Refresh.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\Windows-8-Logo.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\windows_8_default_13_wallpaper.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\windows_modern_logo.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\word.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\word2013icon.png" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\images\x.jpg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\index.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\README.md" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\prettify.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\layouts.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\lists.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\menus.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\navbar.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\notices.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\notify.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\page-template.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\panels.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\progress-bar.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\rating.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\requirements.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\responsive.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\scroll.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\sidebar.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\slider.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\start-screen.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\stepper.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\streamer.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\tab-control.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\tables.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\template-any.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\template-news-portal.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\test-page.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\tiles.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\times.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\treeview.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\typography.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\window.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\docs\wizard.html" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.dev.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.eot" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.json" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.ttf" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\iconFont.woff" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\metroSysIcons.svg" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\metroSysIcons.ttf" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\fonts\metroSysIcons.woff" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\js\README.md" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\accordion.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\balloon.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\breadcrumbs.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\buttons.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\calendar.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\carousel.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\colors.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\countdown.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\dataTables.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\fluent-menu.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\forms.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\funcs.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\grid.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\hint.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\iconFont-content.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\iconFont.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\icons.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\images.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\layout.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\lists.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\menus.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\metro-bootstrap-responsive.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\metro-bootstrap.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\misc.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\navigation-bar.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\notice.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\notify.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\pagination.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\panels.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\progress-bar.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\rating.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\reset.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\scroll.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\sidebar.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\slider.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\stepper.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\streamer.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\tab-control.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\tables.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\tiles.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\transform.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\treeview.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\typography.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\utils.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\variables.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\window.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\less\wizard.less" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\LICENSE" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\merge.cmd" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\metro-ui-css-2.0.31.nuspec" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\min\iconFont.min.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\min\metro-bootstrap-responsive.min.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\min\metro-bootstrap.min.css" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\PULL-REQUESTS.md" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\push.cmd" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\README.md" />
+    <Content Include="public\stylesheets\Metro-UI-CSS-master\switch.cmd" />
+    <Content Include="public\stylesheets\normalize.css" />
+    <Content Include="public\stylesheets\PIE-1.0.0\PIE.htc" />
+    <Content Include="public\stylesheets\PIE-1.0.0\PIE.php" />
+    <Content Include="public\stylesheets\PIE-1.0.0\PIE_uncompressed.htc" />
+    <Content Include="public\stylesheets\reset.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="README.md" />
+    <Content Include="views\dbview.jade" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\api.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\error.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="public\" />
+    <Folder Include="public\data\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\javascripts\aight-master\" />
+    <Folder Include="public\javascripts\aight-master\assets\" />
+    <Folder Include="public\javascripts\aight-master\js\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\stylesheets\font-awesome\" />
+    <Folder Include="public\stylesheets\font-awesome\css\" />
+    <Folder Include="public\stylesheets\font-awesome\fonts\" />
+    <Folder Include="public\stylesheets\font-awesome\less\" />
+    <Folder Include="public\stylesheets\font-awesome\scss\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\compress\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\css\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\css\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\css\less\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\data\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\fonts\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\images\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\js\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\js\holder\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\js\jquery\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\js\metro\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\docs\js\prettify\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\fonts\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\js\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\less\" />
+    <Folder Include="public\stylesheets\Metro-UI-CSS-master\min\" />
+    <Folder Include="public\stylesheets\PIE-1.0.0\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="views\static.jade" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="bin\node.cmd" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
