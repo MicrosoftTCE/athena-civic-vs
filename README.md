@@ -21,16 +21,18 @@ Filtering options provide a unique method for visualizing certain aspects of the
 |`Collaboration`|`Yellow`
 |`Affiliation`|`Pink`
 
-Installation
+Cloning the repository
 ------------
 
-    npm install
-    node app
+    git clone https://github.com/microsoftny/athena-civic-vs.git
 
 Running on localhost
 --------------------
 
+Once the project is opened in Visual Studio and Node tools are installed, navigate to "Control Panel" -> "Programs and Features" -> "Turn Windows Features On or Off". Turn on IIS (Internet Information Services) to enable localhost capabilities on local machine. 
+
+After building and running the project, Athena should be viewable from the following URL.
+
 |Machine | URL
 |------- | ---
-|`Windows`| `localhost:3000`
-|`Mac`| `localhost:port_number/athena-civic`
+|`Windows`| `localhost:1337`
